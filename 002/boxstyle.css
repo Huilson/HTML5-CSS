@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+
+:root{
+    --cor_mais_forte: rgb(255, 150, 0);
+    --cor_forte: rgb(235, 180, 110);
+    --cor_media: rgb(225, 195, 155);
+    --cor_fraca: rgb(235, 235, 205);
+    --cor_mais_fraca: rgb(250, 250, 225);
+    --cor_mais_foco: grey;
+    --cor_menos_foco: blue;
+
+    --fonte_texto: 'Rubik Dirt', cursive;
+    --fonte_rodape: 'Rubik Marker Hatch', cursive;
+    --fonte_titulos: 'Rubik Mono One', sans-serif;
+    --fonte_menus: 'Rubik Burned', cursive;
+}
+
+body{
+    font-family: var(--fonte_texto);
+    background-image: linear-gradient(to bottom, var(--cor_fraca),  var(--cor_mais_forte));     
+}
+
+header{
+    background-color: var(--cor_mais_forte);
+    padding: 10px;
+    
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.65);
+    min-width: 320px;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+header h1 {
+    text-align: center;
+    background-color: var(--cor_mais_fraca);
+    
+    font-family: var(--fonte_titulos);
+    font-size: 40px;
+    height: 90px;
+    width: 170px;
+
+    /*
+    outline-style: auto;
+    outline-color: white;
+    outline-width: 1px;
+    outline-offset: 5px;
+    */
+
+    /*
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    */
+    padding: 10px;
+    
+    /*
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    */
+    margin: 20px auto 20px auto;
+
+    border: solid black;
+}
+
+h2{
+    font-family: var(--fonte_titulos);
+    background-image: linear-gradient(to right, var(--cor_media), transparent);
+}
+
+p{
+    text-indent: 15px;
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+nav{
+    background-color: var(--cor_fraca);
+    padding: 3px;
+    text-align: center;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+}
+
+nav > a{
+    font-family: var(--fonte_menus);
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin: 15px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    color: var(--cor_mais_forte);
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+main{
+    background-color: var(--cor_fraca);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.65);
+
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+}
+
+#a0{
+    background-color: var(--cor_mais_fraca);
+    padding: 5px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#a1{
+    background-color: var(--cor_mais_fraca);
+    padding: 5px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+#img{
+    text-align: center;
+}
+
+article > aside{
+    text-indent: 5px;
+    background-image: linear-gradient(to right, var(--cor_fraca), transparent);
+    border-radius: 5px;
+}
+
+article > ul{
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
+}
+
+.x{
+    list-style-type: '\274C\00A0';
+}
+
+aside > img{
+    max-width:400px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+    border: 2px solid var(--cor_media);
+    border-radius: 50%;
+}
+
+footer{
+    font-family: var(--fonte_rodape);
+    background-color: black;
+    color: white;
+    padding: 1px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.65);
+}
+
+footer > p{
+    margin: 0px;
+    text-align: center;
+}
+
+div#gif{
+    height: 75px;
+    width: 75px;
+    margin: auto;
+    display: flex;
+    background-color: white;
+    border-radius: 50%;
+}
+
+div.video{
+    background-color: var(--cor_muita_fraca);
+    padding: 10px;
+    padding-bottom: 45%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+img {
+    margin: auto;
+    width: 62.5%;
+  }

@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/*
+Medidas absolutas
+cm, mm, in, px, pt, pc
+
+Medidas Relativas
+em: tamanho da altura M de uma fonte --> RECOMENDADO
+ex: tamanho da altura x de uma fonte
+rem: tamanho da altura M de uma fonte (no root do font-family)
+vw: % da largura da viewport
+vh: % da altura da viewport
+%: porcetagem da fonte
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
+@font-face {
+    font-family: 'Hobbit';
+    src: url(fonts/hobbitonbrushhand.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bears';
+    src: url(fonts/carebearsbyIacy.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #e4c03d, #f7f1b2);
+    color:black;
+    text-align: justify;
+}
+
+pre{
+    font-size: 20px;
+}
+/*
+SHORTHAND --> font
+    font-family
+    font-weight
+    font-size
+    font-style
+*/
+
+main{
+    font-family: fantasy;
+    background-color: goldenrod;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(45, 45, 45);
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+
+}
+
+img{
+    display: block;
+    margin: 0px auto;
+}
+
+h1{
+    font-family: 'Hobbit', Times, serif;
+    font-weight: normal;/*lighter normal bold bolder e variação numerica 100 a 900*/
+    font-style: normal;/*italic normal*/
+    /*text-decoration: underline; */
+    color: darkred;
+    text-align: center;
+}
+
+#principal {
+    font-size: 5em;
+    font-family: 'Hobbit', Times, serif;
+}
+
+h2{
+    font-family: 'Hobbit', Times, serif;
+    font-weight: normal;/*lighter normal bold bolder e variação numerica 100 a 900*/
+    font-style: normal;/*italic normal*/
+    /*text-decoration: underline; */
+    font-size: 30px;
+    color: indianred;
+    text-align: center;
+}
+
+h6{
+    font-family: 'Bears';
+    font-size: 6em;
+}
+
+p{
+    text-align: justify;
+    text-indent: 10 px;
+}

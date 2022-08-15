@@ -14,47 +14,70 @@
 }
 
 body{
-    /*background: black url(interface-4k.jpg) center center no-repeat cover fixed;*/
-    background-color: black;
+    min-height: 100vh;
     background-image: url(interface-4k.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
+
 }
 
 nav{
-    background-color: lightblue;
-    padding: 3px;
+    padding: 2px;
+    margin: 4px;
     text-align: center;
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.40);
     border-radius: 20px;
 }
 
 nav > a{
     font-family: var(--f_menus);
-    text-decoration: none;
-    color: black;
+    color: white;
     font-size: 30px;
     margin: 15px;
+    text-decoration: none;
 }
 
 nav > a:hover{
     text-decoration: underline;
-    color: darkblue;
+    color: skyblue;
     border-radius: 5px;
     transition-duration: .5s;
 }
 
 main{
     font-family: var(--f_texto);
-    width: 400px;
-    padding: 10px;
-    border: 1px solid darkblue;
-    border-radius: 15px;
-    margin: auto;
-    background-color: white;
+    min-height: 100vh;
+    
 }
 
+.normal{
+    background-color: black;
+    color: white;
+}
+
+.normal > p{
+    width: 400px;
+}
+
+.imagem{
+    color: black;
+}
+
+.imagem > p {
+    color: white;
+    width: 400px;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
 
 footer{
     font-family: var(--f_rodape);

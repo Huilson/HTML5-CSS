@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+
+:root{
+    --f_texto: 'Rubik Dirt', cursive;
+    --f_rodape: 'Rubik Marker Hatch', cursive;
+    --f_titulos: 'Rubik Mono One', sans-serif;
+    --f_menus: 'Rubik Burned', cursive;
+}
+
+body{
+    /*background: black url(interface-4k.jpg) center center no-repeat cover fixed;*/
+    background-color: black;
+    background-image: url(interface-4k.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav{
+    background-color: lightblue;
+    padding: 3px;
+    text-align: center;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+}
+
+nav > a{
+    font-family: var(--f_menus);
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin: 15px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    color: darkblue;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+main{
+    font-family: var(--f_texto);
+    width: 400px;
+    padding: 10px;
+    border: 1px solid darkblue;
+    border-radius: 15px;
+    margin: auto;
+    background-color: white;
+}
+
+
+footer{
+    font-family: var(--f_rodape);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 130px 0px 0px 0px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.65);
+}
+
+footer > p{
+    margin: 0px;
+    text-align: center;
+}

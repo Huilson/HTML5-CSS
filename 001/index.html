@@ -4,12 +4,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro exercicio</title>
+    <title>OH SITE!</title>
 </head>
+
+<style>
+    body{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 2em;
+    }
+    
+    table{
+        width: 500px;
+        border-collapse: collapse;
+        border: 5px solid black;
+        position: relative;
+    }
+    
+    th{
+        background-color: orange;
+        padding: 8px;
+        border: 1px solid black;
+        position: sticky;
+        top: -3px;
+    }
+
+    td{
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+        
+    }
+
+    tr:nth-child(odd){ /*even 2n 3n etc.*/
+        background-color: lightsalmon;
+        font-weight: bold;
+    }
+
+    div{
+        overflow: auto;
+    }
+
+    iframe{
+        width: 100vw;
+        height: 400px;
+        border: 1px solid black;
+    }
+</style>
+
 <body>
-    <h1>Titulo do meu site</h1>
-    <hr>
-    <p>Esse é um teste de site, por favor não desista de mim, um dia chego lá, você vai ver</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut dolorum aliquam amet excepturi rerum ea harum atque porro necessitatibus aspernatur facilis totam, esse minima aperiam ipsa, voluptatibus exercitationem tempore sint!</p>
+    <h1>Tabela</h1>
+    <div>
+        <table>
+            <colgroup>
+                <col class="chor">
+                <col class="cfol">
+                <col class="csal">
+                <col class="cnot">
+                <col class="csab">
+            </colgroup>
+            <tr><!--primeira linha-->
+                <th scope="col">Horas</th><!--coluna 1 da linha 1-->
+                <th scope="col">Folga</th><!--coluna 2 da linha 1-->
+                <th scope="col">Salario</th><!--coluna 3 da linha 1-->
+                <th scope="col">Noturno</th><!--coluna 4 da linha 1-->
+                <th scope="col">Sabádo</th><!--coluna 5 da linha 1-->
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>5 dias</td>
+                <td>R$0</td>
+                <td> - </td>
+                <td> - </td>
+            </tr>
+            <tr><!--segunda linha-->
+                <td>10</td><!--coluna 1 da linha 2-->
+                <td>3,5 dias</td><!--coluna 2 da linha 2-->
+                <td>R$500</td><!--coluna 3 da linha 2-->
+                <td> - </td><!--coluna 4 da linha 2-->
+                <td> - </td><!--coluna 5 da linha 2-->
+            </tr>
+        
+            <tr>
+                <td>20</td><!--coluna 1 da linha 3-->
+                <td>2 dias</td><!--coluna 2 da linha 3-->
+                <td>R$800</td><!--coluna 3 da linha 3-->
+                <td> - </td><!--coluna 4 da linha 3-->
+                <td rowspan="4"> X </td><!--coluna 5 da linha 3-->
+            </tr>
+            <tr>
+                <td>30</td><!--coluna 1 da linha 4-->
+                <td>1 dia</td><!--coluna 2 da linha 4-->
+                <td>R$1050</td><!--coluna 3 da linha 4-->
+                <td> - </td><!--coluna 4 da linha 4-->
+        
+            </tr>
+            <tr>
+                <td>40</td><!--coluna 1 da linha 5-->
+                <td>1/2 dia</td><!--coluna 2 da linha 5-->
+                <td>R$1800</td><!--coluna 3 da linha 5-->
+                <td> - </td><!--coluna 4 da linha 5-->
+        
+            </tr>
+            <tr>
+                <td>60</td><!--coluna 1 da linha 6-->
+                <td>0 dias</td><!--coluna 2 da linha 6-->
+                <td>R$2500</td><!--coluna 3 da linha 6-->
+                <td> X </td><!--coluna 4 da linha 6-->
+        
+            </tr>
+            <tfoot>
+                <th scope="row">Férias</th>
+                <td colspan="4">50% das horas trabalhadas</td>
+            </tfoot>
+        </table>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident voluptas, molestias vitae ad laboriosam obcaecati nemo. Dolorum sequi mollitia illum sed assumenda deleniti repudiandae in quaerat soluta, aperiam magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti itaque aliquid nihil necessitatibus perspiciatis reprehenderit corrupti eligendi repudiandae! Eius mollitia nesciunt ducimus dolorum laudantium dolorem, fugiat dolore vitae iusto rerum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aperiam vero nesciunt voluptas amet dolor ex neque corporis iste illum facilis, exercitationem autem nemo ipsum voluptate voluptatum et maxime atque?</p>
+    <br>
+
+    <h2>Sites de Compras</h2>
+    <ul>
+        <li><a href="https://jovemnerd.com.br" target="frame">Jovem Nerd</a></li>
+        <li><a href="https://www.nerduniverse.com.br" target="frame">Nerd Universe</a></li>
+        <li><a href="https://www.lolja.com.br" target="frame">LoL Loja</a></li>
+        <li><a href="https://www.artgeek.com.br" target="frame">Artgeek</a></li>
+        <li><a href="https://www.geek10.com.br" target="frame">Geek10</a></li>
+    </ul>
+
+    <iframe src="" name="frame">
+        <a href="#">ErroR!</a>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident voluptas, molestias vitae ad laboriosam obcaecati nemo. Dolorum sequi mollitia illum sed assumenda deleniti repudiandae in quaerat soluta, aperiam magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti itaque aliquid nihil necessitatibus perspiciatis reprehenderit corrupti eligendi repudiandae! Eius mollitia nesciunt ducimus dolorum laudantium dolorem, fugiat dolore vitae iusto rerum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aperiam vero nesciunt voluptas amet dolor ex neque corporis iste illum facilis, exercitationem autem nemo ipsum voluptate voluptatum et maxime atque?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident voluptas, molestias vitae ad laboriosam obcaecati nemo. Dolorum sequi mollitia illum sed assumenda deleniti repudiandae in quaerat soluta, aperiam magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti itaque aliquid nihil necessitatibus perspiciatis reprehenderit corrupti eligendi repudiandae! Eius mollitia nesciunt ducimus dolorum laudantium dolorem, fugiat dolore vitae iusto rerum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aperiam vero nesciunt voluptas amet dolor ex neque corporis iste illum facilis, exercitationem autem nemo ipsum voluptate voluptatum et maxime atque?</p>
 </body>
 </html>

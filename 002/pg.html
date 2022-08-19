@@ -10,8 +10,8 @@
 </head>
 <body>
     <header>
-        <h1>
-            OIALA OH
+        <h1 id="titulop">
+            #
         </h1>
         <nav>
             <a href="../../HTML5-CSS/index.html" rel="prev" target="_self">Home</a>
@@ -69,5 +69,12 @@
         <p>EA MAIS</p>
     </footer>
 
+    <script>
+        var nome = window.prompt("Digite seu nome: ");
+        window.document.getElementById('titulop').innerHTML = 'Bem vindo';
+        var d = window.document.querySelector('h1#titulop');
+        d.style.background = 'blue';
+    </script>
+ 
 </body>
 </html>

@@ -53,6 +53,20 @@
 
         <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/BFejSVlwr_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
+        <div id="evento">
+            Ineraja
+        </div>
+        <br>
+                      
+        <div>
+            <input type="number" name="v1" id="v1">
+            +
+            <input type="number" name="v2" id="v2"> ->
+            <input type="button" value="somar" onclick="somar()">
+            <p id="res">---------------------------</p>
+            <br>
+        </div>
+
         <section id="plus">
             <article id="a1">
                 <h2>LUP</h2>
@@ -70,10 +84,38 @@
     </footer>
 
     <script>
-        var nome = window.prompt("Digite seu nome: ");
-        window.document.getElementById('titulop').innerHTML = 'Bem vindo';
-        var d = window.document.querySelector('h1#titulop');
+        //var nome = prompt("Digite seu nome: ");
+        document.getElementById('titulop').innerHTML = 'Bem vindo';
+        var d = document.querySelector('h1#titulop');
         d.style.background = 'blue';
+        var a = document.getElementById('evento');
+        a.addEventListener('click', cliclar);
+        a.addEventListener('mouseenter', entrar);
+        a.addEventListener('mouseout', sair);
+
+        //eventos
+        function cliclar(){            
+            a.innerText = 'Clicou!';
+            a.style.background = 'green';
+        }
+        function entrar(){            
+            a.innerText = 'Entrou!'
+            a.style.background = 'gold';
+        }
+        function sair(){            
+            a.innerText = 'Saiu!';
+            a.style.background = 'red';
+        }
+
+        function somar(){
+            var n1 = document.querySelector('input#v1');
+            var n2 = document.querySelector('input#v2');
+            var res = document.getElementById('res');
+            var q1 = Number(n1.value);
+            var q2 = Number(n2.value);
+            var s = q1 + q2;
+            res.innerHTML = `A soma entre ${q1} e ${q2} é igual a <strong>${s}</strong>.`;
+        }
     </script>
  
 </body>

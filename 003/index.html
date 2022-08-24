@@ -7,22 +7,22 @@
     <title>Bem-Vindo</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="carregar()">
     <header>
         <h1>Seu site está carregando...</h1>
     </header>
     <main>
         <div id="msg">
-            hora
+            -
         </div>
 
-        <div id="foto">
-            <img src="imagens/dawn.jpg" alt="foto do dia">
+        <div id="foto_area">
+            <img id="foto" src="" alt="foto do dia">
         </div>
 
     </main>
     <footer>
-        <p>&copy;EA MAIS</p>
+        <small id="ea">EA</small> <small id="mais">MAIS</small>
     </footer>
     <script src="script.js"></script>
 </body>

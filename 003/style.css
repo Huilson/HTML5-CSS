@@ -5,8 +5,10 @@ body{
 
 header{
     color: white;
+    font-weight: bolder;
     text-align: center;
-
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
 }
 
 main{
@@ -16,23 +18,41 @@ main{
     width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45);
+    margin-bottom: 15px;
 }
 
-#foto{
+div{
     text-align: center;
+    color: black;
+    font-weight: bolder;
+    
 }
 
 img{
     width: auto;
-    max-width:600px;
+    max-width:500px;
     height: auto;
-    max-height:450px;
+    max-height:350px;
     border: 1px solid black;
     border-radius: 75%;
 
 }
 footer{
-    color: white;
+    background-color: black;
     text-align: center;
     font-style: italic;
+    font-weight: bolder;
+
+    border-radius: 5px;
+    padding: 5px;
+    
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45);
+}
+#ea{
+    color: white;
+}
+#mais{
+    color: rgb(255, 166, 0);
 }

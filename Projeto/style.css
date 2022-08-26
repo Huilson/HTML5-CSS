@@ -24,8 +24,7 @@ main{
 div{
     text-align: center;
     color: black;
-    font-weight: bolder;
-    
+    font-weight: bolder;  
 }
 
 img{
@@ -35,8 +34,27 @@ img{
     max-height:350px;
     border: 1px solid black;
     border-radius: 75%;
-
 }
+
+button{
+    background: #069cc2; 
+    border-radius: 6px; 
+    padding: 15px; 
+    cursor: pointer; 
+    color: #fff; 
+    border: none; 
+    font-size: 16px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+button:hover{
+    background: #006eff;
+    position:relative;
+    top:-1px;
+    box-shadow: 7px 7px 14px rgb(0, 0, 0);
+    transition-delay: 0.25s;    
+}
+
 footer{
     background-color: black;
     text-align: center;

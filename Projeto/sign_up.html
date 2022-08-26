@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="cadastro.php" method="post">
+
+        <!--CADASTRO DO NOME-->
+        <p><label for="idNome">Nome: </label>
+            <input type="text" name="nome" id="idNome" required minlength="6" maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+
+        <!--CADASTRO DO EMAIL-->
+        <p><label for="idEmail">Email: </label>
+            <input type="email" name="email" id="idEmail" required maxlength="30" placeholder="exemplo@email.com" autocomplete="email">
+        </p>
+
+        <!--CADASTRO DO SENHA-->
+        <p><label for="idPass">Senha: </label>
+            <input type="password" name="pass" id="idPass" required minlength="6" maxlength="30" autocomplete="new-password">
+        </p>
+
+        <!--CADASTRO DO ENDEREÇO-->
+        <p><label for="idBairro">Bairro: </label>
+            <input type="text" name="bairro" id="idBairro" required            minlength="6" maxlength="30" autocomplete="address-level1">
+        </p>
+        <p><label for="idRua">Rua: </label>
+            <input type="text" name="rua" id="idBairro" required            minlength="6" maxlength="30" autocomplete="address-level2">
+        </p>
+        <p><label for="idNum">Número: </label>
+            <input type="number" name="num" id="idNum" required            minlength="1" maxlength="7" autocomplete="address-level3">
+        </p>
+        <p><label for="idComplemento">Complemento: </label>
+            <input type="text" name="completo" id="idComplemento"
+            maxlength="90" autocomplete="address-level4">
+        </p>    
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>

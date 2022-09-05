@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROJETO</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Formulario</h1>
@@ -18,12 +21,23 @@
 
         <!--CADASTRO DO EMAIL-->
         <p><label for="idEmail">Email: </label>
-            <input type="email" name="email" id="idEmail" required maxlength="30" placeholder="exemplo@email.com" autocomplete="email">
+            <input type="email" name="email" id="idEmail" required maxlength="30" placeholder="exemplo@email.com" autocomplete="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        </p>
+
+        <!--CADASTRO DO TELEFONE-->
+        <p><label for="idCelular">Celular: </label>
+            <input type="text" name="celular" id="idCelular"
+            autocomplete="tel" pattern="\(\d{2}\)\d{5}\-\d{4}"
+            required>
         </p>
 
         <!--CADASTRO DO SENHA-->
         <p><label for="idPass">Senha: </label>
-            <input type="password" name="pass" id="idPass" required minlength="6" maxlength="30" autocomplete="new-password">
+            <input type="password" name="pass" id="idPass" required minlength="6" maxlength="30" autocomplete="new-password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+            title="Deve conter pelo menos um número e uma letra maiúscula
+            e uma letra minúscula, e pelo menos 6 caracteres">
         </p>
 
         <!--CADASTRO DO ENDEREÇO-->
@@ -39,11 +53,18 @@
         <p><label for="idComplemento">Complemento: </label>
             <input type="text" name="completo" id="idComplemento"
             maxlength="90" autocomplete="address-level4">
-        </p>    
+        </p>
+        <p>
+            <label for="idAniversario">Data de Nascimento</label>
+            <input type="date" name="aniversario" id="idAniversario">
+        </p>
 
         <p>
             <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </p>
     </form>
+    <script src="script.js"></script>
 </body>
+
 </html>

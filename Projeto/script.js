@@ -1,3 +1,7 @@
+
+$(":input").inputmask();
+$("#idCelular").inputmask({"mask": "(99) 99999-9999 "});
+
 function carregar(){
     var msg = document.getElementById('msg');
     var foto = document.getElementById('foto');

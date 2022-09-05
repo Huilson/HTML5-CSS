@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,59 +11,96 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>Formulario</h1>
     <form action="cadastro.php" method="post">
 
-        <!--CADASTRO DO NOME-->
-        <p><label for="idNome">Nome: </label>
-            <input type="text" name="nome" id="idNome" required minlength="6" maxlength="30" placeholder="Nome completo" autocomplete="name">
-        </p>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <!--CADASTRO DO NOME-->
+            <p><label for="idNome">Nome: </label>
+                <input type="text" name="nome" id="idNome" required minlength="6" maxlength="30" placeholder="Nome completo" autocomplete="name">
+            </p>
+            <!--CADASTRO DO EMAIL-->
+            <p><label for="idEmail">Email: </label>
+                <input type="email" name="email" id="idEmail" required maxlength="30" placeholder="exemplo@email.com" autocomplete="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            </p>
+            <!--CADASTRO DO TELEFONE-->
+            <p><label for="idCelular">Celular: </label>
+                <input type="text" name="celular" id="idCelular" autocomplete="tel" pattern="\(\d{2}\)\d{5}\-\d{4}" required>
+            </p>
+            <!--CADASTRO DO SEXO-->
+            <p><label for="idSexo">Sexo: </label>
+                <input type="radio" name="sexo" id="idSexoM" value="M">
+                <label for="idSexoM">Masculino</label>
+                <input type="radio" name="sexo" id="idSexoF" value="F">
+                <label for="idSexoF">Femenino</label>
+            </p>
+        </fieldset>
 
-        <!--CADASTRO DO EMAIL-->
-        <p><label for="idEmail">Email: </label>
-            <input type="email" name="email" id="idEmail" required maxlength="30" placeholder="exemplo@email.com" autocomplete="email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-        </p>
-
-        <!--CADASTRO DO TELEFONE-->
-        <p><label for="idCelular">Celular: </label>
-            <input type="text" name="celular" id="idCelular"
-            autocomplete="tel" pattern="\(\d{2}\)\d{5}\-\d{4}"
-            required>
-        </p>
+        <br>
 
         <!--CADASTRO DO SENHA-->
-        <p><label for="idPass">Senha: </label>
-            <input type="password" name="pass" id="idPass" required minlength="6" maxlength="30" autocomplete="new-password"
-            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
-            title="Deve conter pelo menos um número e uma letra maiúscula
-            e uma letra minúscula, e pelo menos 6 caracteres">
-        </p>
+        <fieldset>
+            <legend>Senha e Segurança</legend>
+            <p><label for="idPass">Senha: </label>
+                <input type="password" name="pass" id="idPass" required minlength="6" maxlength="30"               autocomplete="new-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Deve conter pelo menos um número e uma letra maiúscula
+                e uma letra minúscula, e pelo menos 6 caracteres">
+            </p>
+            <p><label for="idPass">Confirmação de Senha: </label>
+                <input type="password" name="pass" id="idPass" required minlength="6" maxlength="30"               autocomplete="new-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Deve conter pelo menos um número e uma letra maiúscula
+                e uma letra minúscula, e pelo menos 6 caracteres">
+            </p>
+        </fieldset>
+
+        <br>
 
         <!--CADASTRO DO ENDEREÇO-->
-        <p><label for="idBairro">Bairro: </label>
-            <input type="text" name="bairro" id="idBairro" required            minlength="6" maxlength="30" autocomplete="address-level1">
-        </p>
-        <p><label for="idRua">Rua: </label>
-            <input type="text" name="rua" id="idBairro" required            minlength="6" maxlength="30" autocomplete="address-level2">
-        </p>
-        <p><label for="idNum">Número: </label>
-            <input type="number" name="num" id="idNum" required            minlength="1" maxlength="7" autocomplete="address-level3">
-        </p>
-        <p><label for="idComplemento">Complemento: </label>
-            <input type="text" name="completo" id="idComplemento"
-            maxlength="90" autocomplete="address-level4">
-        </p>
-        <p>
-            <label for="idAniversario">Data de Nascimento</label>
-            <input type="date" name="aniversario" id="idAniversario">
-        </p>
+        <fieldset>
+            <legend>Endereço</legend>
+            <p><label for="idBairro">Bairro: </label>
+                <input type="text" name="bairro" id="idBairro" required minlength="6" maxlength="30"                   autocomplete="address-level1">
+            </p>
+            <p><label for="idRua">Rua: </label>
+                <input type="text" name="rua" id="idBairro" required minlength="6" maxlength="30"                   autocomplete="address-level2">
+            </p>
+            <p><label for="idNum">Número: </label>
+                <input type="number" name="num" id="idNum" required minlength="1" maxlength="7"         autocomplete="address-level3">
+            </p>
+            <p><label for="idComplemento">Complemento: </label>
+                <input type="text" name="completo" id="idComplemento" maxlength="90" autocomplete="address-level4">
+            </p>
+            <p>
+                <label for="idAniversario">Data de Nascimento</label>
+                <input type="date" name="aniversario" id="idAniversario">
+            </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Como você descobriu esse serviço?</legend>
+                <input type="checkbox" name="rs" id="IdRs"><label for="IdRs">Redes Sociais</label>
+                <br>
+                <input type="checkbox" name="gg" id="IdGg"><label for="idGg">Google ou outro mecanismo de busca</label>
+                <br>
+                <input type="checkbox" name="nf" id="IdNf"><label for="IdNf">Notificações de e-mail</label>
+                <br>
+                <input type="checkbox" name="ps" id="IdPs"><label for="IdPs">Através de conversas interpessoais</label>
+                <br>
+                <input type="checkbox" name="om" id="IdOm"><label>Outras mídias, como TV, jornal, rádio, etc.</label>
+                <br>
+                <input type="checkbox" name="ot" id="IdOt"><label>Outro</label>
+        </fieldset>
+        
+        <br>
 
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+
     </form>
     <script src="script.js"></script>
 </body>

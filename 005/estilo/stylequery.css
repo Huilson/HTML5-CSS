@@ -35,6 +35,10 @@
     menu > ul > li{
         display: inline-block;
     }
+
+    main{
+        width: 768px;
+    }
 }
 
 @media  screen and (min-width: 993px) and (max-width: 1200px){
@@ -56,6 +60,10 @@
     menu > ul > li{
         display: inline-block;
     }
+
+    main{
+        width: 768px;
+    }
 }
 
 @media  screen and (min-width: 1201px){
@@ -72,9 +80,12 @@
         display: none;        
     }
     menu{
-        display: block;
-    }
+        display: block; 
     menu > ul > li{
         display: inline-block;
+    }
+
+    main{
+        width: 768px;
     }
 }
